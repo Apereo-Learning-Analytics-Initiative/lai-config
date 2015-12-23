@@ -1,11 +1,11 @@
 # Tomcat
 server:
   port: 8080
-	
+  
 # xAPI
 xapi:
-  version: 1.0.1	
-	
+  version: 1.0.1
+  
 # Security
 auth:
   enabled: true
@@ -15,4 +15,3 @@ auth:
   oauth:
     key: openlrs
     secret: openlrs
-

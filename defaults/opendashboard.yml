@@ -5,5 +5,5 @@ server:
 # Security
 auth:
   oauth:
-    key: openlrs
-    secret: openlrs
+    key: opendash
+    secret: opendash
