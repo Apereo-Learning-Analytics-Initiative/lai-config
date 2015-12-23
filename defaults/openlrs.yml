@@ -1,0 +1,18 @@
+# Tomcat
+server:
+	port: 8080
+	
+# xAPI
+xapi:
+	version: 1.0.1	
+	
+# Security
+auth:
+	enabled: true
+	basic:
+		username: openlrs
+		password: openlrs
+	oauth:
+		key: openlrs
+		secret: openlrs
+

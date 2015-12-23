@@ -1,0 +1,12 @@
+# Tomcat
+server:
+	port: 8081
+	
+# Security
+auth:
+	oauth:
+		key: openlrs
+		secret: openlrs
+
+	
+	
