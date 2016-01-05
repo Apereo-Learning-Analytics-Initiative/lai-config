@@ -9,4 +9,9 @@ spring:
         git:
           uri: https://github.com/Apereo-Learning-Analytics-Initiative/lai-config
           searchPaths: defaults
+          
+security:
+  user:
+    name: apereo
+    password: openanalytics
 
