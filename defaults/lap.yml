@@ -15,12 +15,21 @@
 
 server:
   port: 8082
+  
+# type of persistent storage
+# possible values are H2 or MongoDB
+lap:
+  persistentStorage: H2
 
 spring:
   thymeleaf: 
     cache: false
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+  # if you use MongoDB for persistentStorage, then also set relevant mongo properties
+  # data:
+    # mongodb:
+      # uri: mongodb://localhost/lap_default
 
 datasource:
   # Temp DB - H2
@@ -37,18 +46,7 @@ datasource:
     driverClassName: org.h2.Driver
     url: jdbc:h2:file:/tmp/lap-db;MODE=MYSQL;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE
     dialect: org.hibernate.dialect.H2Dialect
-    
-# type of persistent storage
-# possible values are H2 or MongoDB
-lap:
-  persistentStorage: H2
-  
-# if you use MongoDB for persistentStorage, then also set relevant mongo properties
-# spring:
-  # data:
-    # mongodb:
-      # uri: mongodb://localhost/lap_default
-    
+          
 ## Names of the database connections used in .ktr and .kjb files
 ## Comma-separated values list
 kettle:
