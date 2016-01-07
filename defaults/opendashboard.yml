@@ -29,9 +29,6 @@ auth:
 # Logging settings
 logging:
   level: INFO
-    org:
-      apache:
-        velocity: OFF
 
 # Spring settings
 spring:
